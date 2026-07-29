@@ -385,8 +385,8 @@ main {
 .hero {
   position: relative;
   width: 100%;
-  height: min(620px, calc(100vh - 88px));
-  height: min(620px, calc(100svh - 88px));
+  height: calc(100vh - 88px);
+  height: calc(100svh - 88px);
   min-height: 560px;
   margin: 0;
   overflow: hidden;
