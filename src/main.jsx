@@ -768,18 +768,26 @@ function Services() {
 function ServiceDetail({ service }) {
   return (
     <>
-      <PageHero label="Dienstleistungen" title={service.title} text={service.lead} image={service.hero} />
       <section className="service-detail">
-        <div className="content service-detail-grid">
-          <div>
+        <div className="content service-detail-header-grid">
+          <div className="service-detail-heading">
+            <span className="kicker">Dienstleistungen</span>
+            <h1>{service.title}</h1>
+            <p>{service.lead}</p>
+          </div>
+          <div className="service-detail-explanation">
             <span className="kicker">Unsere Leistung</span>
             <h2>{service.heading}</h2>
             <p>{service.copy}</p>
             <a className="button button-solid" href="/kontakt">Beratung anfragen <ArrowRight aria-hidden="true" /></a>
           </div>
-          <div className="service-detail-visual">
+        </div>
+        <div className="service-detail-support-wrap">
+          <div className="content service-detail-support">
             <img src={service.detailImage} alt="" />
-            <ul>{service.points.map((point) => <li key={point}><Check aria-hidden="true" /> {point}</li>)}</ul>
+            <ul className="service-detail-points">
+              {service.points.map((point) => <li key={point}><Check aria-hidden="true" /> <span>{point}</span></li>)}
+            </ul>
           </div>
         </div>
       </section>
@@ -1087,7 +1095,9 @@ const revealSelector = [
   '.company-values-column',
   '.primary-service-card',
   '.secondary-service-grid article',
-  '.service-detail-grid > div',
+  '.service-detail-header-grid > div',
+  '.service-detail-support > img',
+  '.service-detail-points li',
   '.references-title h1',
   '.reference-archive-intro',
   '.contact-intro-copy',
@@ -1108,6 +1118,7 @@ const revealMediaSelector = [
   '.overview-link-card',
   '.primary-service-card',
   '.secondary-service-grid article',
+  '.service-detail-support > img',
 ].join(',');
 
 function useScrollReveal(pageKey) {
