@@ -555,14 +555,6 @@ function OfferShowcase() {
           <button type="button" onClick={showPrevious} aria-label="Vorheriges Angebot"><ArrowLeft aria-hidden="true" /></button>
           <button type="button" onClick={showNext} aria-label="Nächstes Angebot"><ArrowRight aria-hidden="true" /></button>
         </div>
-        <a
-          className="button button-solid"
-          href={homegateProfileUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Alle Angebote <ExternalLink aria-hidden="true" />
-        </a>
       </div>
     </div>
   );
