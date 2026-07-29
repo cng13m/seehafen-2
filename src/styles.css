@@ -25,6 +25,7 @@
 }
 
 html {
+  background: var(--green-950);
   scroll-behavior: smooth;
 }
 
@@ -32,12 +33,17 @@ body {
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
-  background: var(--paper);
+  background: var(--green-950);
   color: var(--ink);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  background: var(--green-950);
 }
 
 body.menu-open {
@@ -90,6 +96,10 @@ section,
 article,
 div {
   min-width: 0;
+}
+
+main {
+  background: var(--paper);
 }
 
 .content {
@@ -1929,6 +1939,7 @@ div {
 .footer {
   color: #fff;
   background: var(--green-950);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .footer-main {
