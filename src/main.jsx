@@ -581,7 +581,7 @@ function Home() {
   return (
     <>
       <section className="hero">
-        <img src="/assets/hero-pool.png" alt="Moderne Immobilie mit Pool und Weitblick" />
+        <img src="/assets/hero-seehafen.jpg" alt="Das Seehafen-Team im Gespräch vor einer modernen Immobilie" />
         <div className="content hero-content">
           <p className="hero-eyebrow">Langfristig. Persönlich. Verlässlich.</p>
           <h1>Immobilien<br />mit Weitblick.</h1>
