@@ -102,16 +102,22 @@ const homeServices = [
     href: '/dienstleistungen/immobilienverkauf',
   },
   {
-    title: 'Bewirtschaftung',
-    image: '/assets/team-2.jpg',
-    text: 'Zuverlässige Betreuung mit klaren Prozessen und Blick auf den langfristigen Werterhalt.',
-    href: '/dienstleistungen/mietliegenschaften',
-  },
-  {
-    title: 'Immobilienberatung',
+    title: 'Immobilienbewertung',
     image: '/assets/team-3.jpg',
     text: 'Nachvollziehbare Entscheidungsgrundlagen für Eigentümer, Käufer und Investoren.',
     href: '/dienstleistungen/immobilienbewertung',
+  },
+  {
+    title: 'Stockwerkeigentum',
+    image: '/assets/about.jpg',
+    text: 'Strukturierte Verwaltung, transparente Kommunikation und persönliche Betreuung.',
+    href: '/dienstleistungen/stockwerkeigentum',
+  },
+  {
+    title: 'Mietliegenschaften',
+    image: '/assets/team-2.jpg',
+    text: 'Zuverlässige Bewirtschaftung mit klaren Prozessen und Blick auf den langfristigen Werterhalt.',
+    href: '/dienstleistungen/mietliegenschaften',
   },
 ];
 
@@ -587,23 +593,6 @@ function Home() {
         </div>
       </section>
 
-      <HomeOffers />
-
-      <section className="home-references">
-        <div className="content">
-          <div className="section-heading">
-            <div>
-              <span className="kicker">Referenzen</span>
-              <h2>Kürzlich verkaufte Objekte.</h2>
-            </div>
-            <a className="text-link" href="/referenzen">Alle Referenzen <ArrowRight aria-hidden="true" /></a>
-          </div>
-          <div className="reference-preview-grid">
-            {soldReferences.slice(0, 3).map((item) => <ReferenceTile key={`${item[0]}-${item[1]}`} item={item} />)}
-          </div>
-        </div>
-      </section>
-
       <section id="expertise" className="home-intro">
         <div className="content">
           <div className="home-heading">
@@ -624,6 +613,23 @@ function Home() {
                 </div>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <HomeOffers />
+
+      <section className="home-references">
+        <div className="content">
+          <div className="section-heading">
+            <div>
+              <span className="kicker">Referenzen</span>
+              <h2>Kürzlich verkaufte Objekte.</h2>
+            </div>
+            <a className="text-link" href="/referenzen">Alle Referenzen <ArrowRight aria-hidden="true" /></a>
+          </div>
+          <div className="reference-preview-grid">
+            {soldReferences.slice(0, 3).map((item) => <ReferenceTile key={`${item[0]}-${item[1]}`} item={item} />)}
           </div>
         </div>
       </section>
