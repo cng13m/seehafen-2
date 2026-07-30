@@ -207,7 +207,7 @@ const team = [
 
 const navGroups = [
   {
-    label: 'Firma',
+    label: 'Über uns',
     href: '/firma',
     items: [['Über uns', '/firma#uber-uns'], ['Unser Team', '/firma#team'], ['Werte & Arbeitsweise', '/firma#werte']],
   },
@@ -1008,18 +1008,15 @@ function Datenschutz() {
       <p>Verantwortlich für die Datenbearbeitung im Sinne des schweizerischen Datenschutzgesetzes (DSG) ist:</p>
       <p><strong>Seehafen & Partner Immobilien AG</strong><br />Bahnhofstrasse 4<br />6430 Schwyz<br />Schweiz<br />E-Mail: <a href="mailto:info@seehafen-immobilien.ch">info@seehafen-immobilien.ch</a></p>
       <h2>Erhebung und Bearbeitung personenbezogener Daten</h2>
-      <p>Personenbezogene Daten werden erhoben, wenn Sie uns diese freiwillig mitteilen, beispielsweise bei der Kontaktaufnahme per E-Mail oder über das Kontaktformular. Dabei kann es sich insbesondere um Name, E-Mail-Adresse, Telefonnummer oder weitere von Ihnen übermittelte Informationen handeln.</p>
-      <p>Die Bearbeitung dieser Daten erfolgt ausschliesslich zum Zweck der Bearbeitung Ihrer Anfrage oder zur Kontaktaufnahme mit Ihnen.</p>
+      <p>Personenbezogene Daten werden erhoben, wenn Sie uns diese freiwillig mitteilen, beispielsweise bei der Kontaktaufnahme per E-Mail oder über ein Kontaktformular. Dabei kann es sich insbesondere um Name, E-Mail-Adresse, Telefonnummer oder weitere von Ihnen übermittelte Informationen handeln. Die Bearbeitung dieser Daten erfolgt ausschliesslich zum Zweck der Bearbeitung Ihrer Anfrage oder zur Kontaktaufnahme mit Ihnen.</p>
       <h2>Zweck der Datenbearbeitung</h2>
       <p>Die Bearbeitung personenbezogener Daten erfolgt zur Beantwortung von Anfragen, zur Erfüllung vertraglicher und vorvertraglicher Pflichten sowie zur Erbringung unserer Dienstleistungen im Bereich Immobilien.</p>
-      <h2>Hosting und technische Dienstleister</h2>
-      <p>Diese Website und das Kontaktformular werden über Dienste von Cloudflare betrieben. Dabei können technische Verbindungsdaten sowie die über das Kontaktformular eingegebenen Angaben verarbeitet werden. Wir setzen Dienstleister nur ein, soweit dies für den sicheren Betrieb der Website und die Bearbeitung Ihrer Anfrage erforderlich ist.</p>
       <h2>Weitergabe von Daten an Dritte</h2>
-      <p>Eine Weitergabe personenbezogener Daten erfolgt nur, sofern dies zur Vertragserfüllung oder zum Betrieb dieser Website erforderlich ist, eine gesetzliche Verpflichtung besteht oder Sie ausdrücklich eingewilligt haben. Bei einer Bearbeitung ausserhalb der Schweiz achten wir auf angemessene datenschutzrechtliche Garantien.</p>
+      <p>Eine Weitergabe personenbezogener Daten an Dritte erfolgt nur, sofern dies zur Vertragserfüllung erforderlich ist, eine gesetzliche Verpflichtung besteht oder Sie ausdrücklich eingewilligt haben. Eine Übermittlung ins Ausland oder an Drittstaaten findet nicht statt.</p>
       <h2>Datensicherheit</h2>
       <p>Wir setzen angemessene technische und organisatorische Sicherheitsmassnahmen ein, um personenbezogene Daten vor unbefugtem Zugriff, Verlust, Missbrauch oder Manipulation zu schützen. Diese Massnahmen werden entsprechend der technologischen Entwicklung laufend angepasst.</p>
       <h2>Cookies</h2>
-      <p>Diese Website kann technisch notwendige Cookies verwenden. Sie können die Verwendung von Cookies in den Einstellungen Ihres Browsers einschränken oder deaktivieren. Die Deaktivierung kann die Funktionalität der Website beeinträchtigen.</p>
+      <p>Diese Website verwendet Cookies, um die Funktionalität und Benutzerfreundlichkeit zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Sie können die Verwendung von Cookies in den Einstellungen Ihres Browsers einschränken oder deaktivieren. Die Deaktivierung kann die Funktionalität der Website beeinträchtigen.</p>
       <h2>Rechte der betroffenen Personen</h2>
       <p>Sie haben im Rahmen der geltenden datenschutzrechtlichen Bestimmungen das Recht auf Auskunft über die zu Ihrer Person gespeicherten Daten sowie das Recht auf Berichtigung, Löschung oder Einschränkung der Bearbeitung. Anfragen richten Sie bitte an die oben genannte Kontaktadresse.</p>
       <h2>Änderungen dieser Datenschutzerklärung</h2>
