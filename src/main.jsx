@@ -582,6 +582,7 @@ function Home() {
     <>
       <section className="hero">
         <img src="/assets/hero-seehafen.jpg" alt="Das Seehafen-Team im Gespräch vor einer modernen Immobilie" />
+        <div className="hero-overlay" />
         <div className="content hero-content">
           <p className="hero-eyebrow">Langfristig. Persönlich. Verlässlich.</p>
           <h1>Immobilien<br />mit Weitblick.</h1>
