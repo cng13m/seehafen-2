@@ -396,22 +396,10 @@ main {
 
 .hero > img {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 64%;
+  inset: 0;
+  width: 100%;
   height: 100%;
-  object-position: center 50%;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 45%;
-  background:
-    radial-gradient(circle at 20% 78%, rgba(13, 127, 232, 0.2), transparent 42%),
-    linear-gradient(135deg, #071f42 0%, #082e61 100%);
-  clip-path: polygon(0 0, 100% 0, 89% 100%, 0 100%);
+  object-position: center top;
 }
 
 .hero-content {
@@ -422,6 +410,8 @@ main {
   padding-bottom: 0;
   flex-direction: column;
   justify-content: center;
+  color: var(--green-950);
+  text-shadow: 0 1px 18px rgba(255, 255, 255, 0.72);
 }
 
 .hero-content > * {
@@ -430,7 +420,7 @@ main {
 
 .hero-eyebrow {
   margin: 0 0 16px;
-  color: #7cc6ff;
+  color: var(--green-950);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.15em;
@@ -2329,15 +2319,6 @@ main {
     width: 100%;
   }
 
-  .hero-overlay {
-    inset: 0;
-    width: 100%;
-    background:
-      linear-gradient(90deg, rgba(7, 31, 66, 0.92) 0%, rgba(7, 31, 66, 0.54) 60%, rgba(7, 31, 66, 0.12) 100%),
-      linear-gradient(0deg, rgba(7, 31, 66, 0.72) 0%, transparent 58%);
-    clip-path: none;
-  }
-
   .hero-content {
     padding-bottom: 96px;
     justify-content: flex-end;
@@ -2481,12 +2462,6 @@ main {
 
   .hero > img {
     object-position: 62% center;
-  }
-
-  .hero-overlay {
-    background:
-      linear-gradient(90deg, rgba(7, 31, 66, 0.82), rgba(7, 31, 66, 0.26)),
-      linear-gradient(0deg, rgba(7, 31, 66, 0.88) 0%, rgba(7, 31, 66, 0.12) 70%);
   }
 
   .hero-content {

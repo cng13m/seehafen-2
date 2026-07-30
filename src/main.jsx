@@ -581,8 +581,7 @@ function Home() {
   return (
     <>
       <section className="hero">
-        <img src="/assets/hero-original.jpg" alt="Moderne Immobilie mit Pool und Weitblick" />
-        <div className="hero-overlay" />
+        <img src="/assets/hero-pool.png" alt="Moderne Immobilie mit Pool und Weitblick" />
         <div className="content hero-content">
           <p className="hero-eyebrow">Langfristig. Persönlich. Verlässlich.</p>
           <h1>Immobilien<br />mit Weitblick.</h1>
