@@ -803,6 +803,31 @@ main {
   -webkit-line-clamp: 4;
 }
 
+.offer-showcase-info > .offer-showcase-price {
+  display: block;
+  overflow: visible;
+  color: var(--green-900);
+  font-size: clamp(28px, 2.3vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.offer-showcase-price > span {
+  margin-right: 5px;
+  color: var(--green-800);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.offer-showcase-price > small {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
 .offer-showcase-facts {
   display: flex;
   margin-top: auto;

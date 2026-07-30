@@ -13,7 +13,6 @@ import {
   MapPin,
   Menu,
   Phone,
-  RefreshCw,
   Ruler,
   X,
 } from 'lucide-react';
@@ -118,31 +117,33 @@ const homeServices = [
 
 const offerShowcaseItems = [
   {
-    slug: 'kaufen',
-    label: 'Kaufen',
-    title: 'Aktuelle Immobilien zum Kauf.',
-    text: 'Entdecken Sie verfügbare Wohn- und Renditeobjekte auf unserem laufend aktualisierten Anbieterprofil.',
-    image: '/assets/property-3.jpg',
-    location: 'Schweizweit',
-    types: 'Wohn- & Renditeobjekte',
+    slug: 'schaffhausen-15-zimmer',
+    label: 'Miete',
+    title: 'Moderne 1.5-Zimmer-Wohnung in Schaffhausen',
+    image: '/assets/offers/schaffhausen-15-zimmer.avif',
+    location: 'Schaffhausen',
+    price: "1'450.–",
+    rooms: '1.5 Zimmer',
+    area: '32 m²',
   },
   {
-    slug: 'mieten',
-    label: 'Mieten',
-    title: 'Aktuelle Immobilien zur Miete.',
-    text: 'Finden Sie Ihr neues Zuhause oder passende Gewerberäume unter unseren aktuellen Mietangeboten.',
-    image: '/assets/property-1.jpg',
-    location: 'Schweizweit',
-    types: 'Wohnen & Gewerbe',
+    slug: 'huttwil-35-zimmer',
+    label: 'Miete',
+    title: 'Moderne 3.5-Zimmer-Wohnung im Neubau – Huttwil',
+    image: '/assets/offers/huttwil-35-zimmer.avif',
+    location: 'Huttwil',
+    price: "1'570.–",
+    rooms: '3.5 Zimmer',
+    area: '72 m²',
   },
   {
-    slug: 'erstvermietung',
-    label: 'Erstvermietung',
-    title: 'Neubau- und Erstvermietungsprojekte.',
-    text: 'Moderne Immobilien und neue Projekte – professionell vermarktet und persönlich begleitet.',
-    image: '/assets/hero-original.jpg',
-    location: 'Ausgewählte Regionen',
-    types: 'Neubau & Erstbezug',
+    slug: 'wohlen-lagerraum',
+    label: 'Miete',
+    title: 'Lagerraum zur Miete an der Oberen Haldenstrasse in Wohlen',
+    image: '/assets/offers/wohlen-lagerraum.avif',
+    location: 'Wohlen',
+    price: '250.–',
+    rooms: '1 Zimmer',
   },
 ];
 
@@ -527,17 +528,17 @@ function OfferShowcase() {
 
       <div className="offer-showcase-stage">
         <div className="offer-showcase-image">
-          <img src={offer.image} alt="" />
+          <img src={offer.image} alt={offer.title} />
           <span>{String(activeIndex + 1).padStart(2, '0')} / {String(offerShowcaseItems.length).padStart(2, '0')}</span>
         </div>
         <article className="offer-showcase-info">
           <span className="reference-type">{offer.label}</span>
           <h3>{offer.title}</h3>
-          <p>{offer.text}</p>
+          <p className="offer-showcase-price"><span>CHF</span> {offer.price}<small> / Monat</small></p>
           <div className="offer-showcase-facts">
             <span><MapPin aria-hidden="true" /> {offer.location}</span>
-            <span><Building2 aria-hidden="true" /> {offer.types}</span>
-            <span><RefreshCw aria-hidden="true" /> Laufend aktualisiert</span>
+            <span><Building2 aria-hidden="true" /> {offer.rooms}</span>
+            {offer.area && <span><Ruler aria-hidden="true" /> {offer.area}</span>}
           </div>
           <a
             className="offer-showcase-detail"
@@ -562,7 +563,7 @@ function OfferShowcase() {
 
 function HomeOffers() {
   return (
-    <section className="home-offers">
+    <section className="home-offers" id="angebote">
       <div className="content">
         <OfferShowcase />
       </div>
